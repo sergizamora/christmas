@@ -41,5 +41,12 @@ main{
 		&[data-background="6"]{
 			background-image: url("../img/mountain-6.png");
 		}
+
+		#snow1{
+			width: 800px;
+			height: 600px;
+			margin: 0 auto;
+			background-color: black;
+		}
 	}
 }
