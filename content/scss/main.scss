@@ -1,0 +1,45 @@
+$color-sky-1 : #FFFFFF;
+$color-sky-2 : #6DD5FA;
+$color-sky-3 : #2980B9;
+body{
+	background: $color-sky-3;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, $color-sky-3, $color-sky-2, $color-sky-1);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, $color-sky-3, $color-sky-2, $color-sky-1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+main{
+	width: 100%;
+	margin: 0 auto;
+	border: 2px solid black;
+	.frame{
+		color: red;
+		height: 100vh;
+		width: 3840px;
+		margin-left: -960px;
+		background-repeat: no-repeat;
+		background-position: bottom;
+		background-size: 100% 100%;
+		
+		&[data-background="1"]{
+			background-image: url("../img/mountain-1.png");
+		}
+		&[data-background="2"]{
+			background-image: url("../img/mountain-2.png");
+		}
+		&[data-background="3"]{
+			background-image: url("../img/mountain-3.png");
+		}
+		&[data-background="4"]{
+			background-image: url("../img/mountain-4.png");
+		}
+		&[data-background="5"]{
+			background-image: url("../img/mountain-5.png");
+		}
+		&[data-background="6"]{
+			background-image: url("../img/mountain-6.png");
+		}
+	}
+}
