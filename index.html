@@ -4,30 +4,58 @@
 	<link rel="stylesheet" href="content/css/main.css"></link>
 </head>
 <body>
+  <main id="container" class="wrapper">
+    <div data-relative-input="true" id="scene">
+      <div class="frame" data-depth="0.8">
+       <img src="content/img/fin/last-mountain.png"/>
+     </div>
+     <div class="frame" data-depth="0.6">
+       <img src="content/img/fin/back-mountain.png"/>
+     </div>
+     <div class="frame" data-depth="0.4">
+       <img src="content/img/fin/3-mountain.png"/>
+     </div>
+     <div class="frame" data-depth="0.2">
+       <img src="content/img/fin/2-mountain.png"/>
+       <div class="trees">
+        <div class="pack1">
+          <img src="content/img/fin/tree-1.png"/>
+          <img src="content/img/fin/tree-1.png"/>
+        </div>
+        <div class="pack2">
+          <img src="content/img/fin/tree-1.png"/>
+          <img src="content/img/fin/tree-1.png"/>
+        </div>
+        <div class="pack3">
+          <img src="content/img/fin/tree-1.png"/>
+          <img src="content/img/fin/tree-2.png"/>
+        </div>
+        <div class="pack4">
+          <img src="content/img/fin/tree-1.png"/>
+          <img src="content/img/fin/tree-2.png"/>
+          <img src="content/img/fin/tree-1.png"/>
+          <img src="content/img/fin/tree-1.png"/>
+        </div>
+        <div class="pack5">
+          <img src="content/img/fin/tree-1.png"/>
+          <img src="content/img/fin/tree-2.png"/>
+        </div>
+      </div>
+    </div>
+    <div class="frame" data-depth="0">
+      <img src="content/img/fin/1-mountain.png"/>
+    </div>
 
-  <main data-relative-input="true" id="scene">
-    <div class="frame" data-background="6" data-depth="0.78" id="frame6">
-    </div>
-    <div class="frame" data-background="5" data-depth="0.62" id="frame5">
-    </div>
-    <div class="frame" data-background="4" data-depth="0.48" id="frame4">
-    </div>
-    <div class="frame" data-background="3" data-depth="0.32" id="frame3">
-    </div>
-    <div class="frame" data-background="2" data-depth="0.16" id="frame2">
-      <div id="ball"></div>
-    </div>
-    <div class="frame" data-background="1" data-depth="0" id="frame1">
-    </div>
-  </main>
-  
-  <!-- PLUGINS -->
-  <script src="content/js/plugins.js"></script>
-  <!-- SCRIPTS -->
-  <script src="content/js/main.js"></script>
-  <!-- SCRIPTS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
-  <script src="content/js/sketch.js"></script>
-</body>
+  </div>
+</main>
 
-</html>
+<!-- PLUGINS -->
+<script src="content/js/libraries.js"></script>
+<!-- SCRIPTS -->
+<script src="content/js/main.js"></script>
+<!-- SCRIPTS -->
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+    <script src="content/js/sketch.js"></script>-->
+  </body>
+
+  </html>
