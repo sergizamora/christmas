@@ -1,61 +1,66 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link rel="stylesheet" href="content/css/main.css"></link>
-</head>
-<body>
-  <main id="container" class="wrapper">
-    <div data-relative-input="true" id="scene">
-      <div class="frame" data-depth="0.8">
-       <img src="content/img/fin/last-mountain.png"/>
-     </div>
-     <div class="frame" data-depth="0.6">
-       <img src="content/img/fin/back-mountain.png"/>
-     </div>
-     <div class="frame" data-depth="0.4">
-       <img src="content/img/fin/3-mountain.png"/>
-     </div>
-     <div class="frame" data-depth="0.2">
-       <img src="content/img/fin/2-mountain.png"/>
-       <div class="trees">
-        <div class="pack1">
-          <img src="content/img/fin/tree-1.png"/>
-          <img src="content/img/fin/tree-1.png"/>
-        </div>
-        <div class="pack2">
-          <img src="content/img/fin/tree-1.png"/>
-          <img src="content/img/fin/tree-1.png"/>
-        </div>
-        <div class="pack3">
-          <img src="content/img/fin/tree-1.png"/>
-          <img src="content/img/fin/tree-2.png"/>
-        </div>
-        <div class="pack4">
-          <img src="content/img/fin/tree-1.png"/>
-          <img src="content/img/fin/tree-2.png"/>
-          <img src="content/img/fin/tree-1.png"/>
-          <img src="content/img/fin/tree-1.png"/>
-        </div>
-        <div class="pack5">
-          <img src="content/img/fin/tree-1.png"/>
-          <img src="content/img/fin/tree-2.png"/>
-        </div>
-      </div>
-    </div>
-    <div class="frame" data-depth="0">
-      <img src="content/img/fin/1-mountain.png"/>
-    </div>
+    <head>
+        <link rel="stylesheet" href="content/css/main.css"></link>
+    </head>
+    <body>
+        <main id="container" class="wrapper">
+            <div data-relative-input="true" id="scene">
+                <div class="frame" data-depth="0.8">
+                    <img src="content/img/fin/christmas/last-mountain.png"/>
+                </div>
+                <div class="frame" data-depth="0.6">
+                    <img src="content/img/fin/christmas/back-mountain.png"/>
+                </div>
+                <div class="frame" data-depth="0.4">
+                    <img src="content/img/fin/christmas/3-mountain.png"/>
+                </div>
+                <div class="frame" data-depth="0.2">
+                    <img src="content/img/fin/christmas/2-mountain.png"/>
+                    <div class="trees">
+                        <div class="pack1">
+                            <img src="content/img/fin/christmas/tree-1.png"/>
+                            <img src="content/img/fin/christmas/tree-1.png"/>
+                        </div>
+                        <div id="shaker-container">
+                            <img class="background" src="content/img/fin/christmas/shaker-1.png"/>
+                            <div id="shaker"></div>
+                            <img class="content" src="content/img/fin/christmas/shaker-2.png"/>
+                            <img class="glass" src="content/img/fin/christmas/shaker-3.png"/>
+                        </div>
+                        <div class="pack2">
+                            <img src="content/img/fin/christmas/tree-4.png"/>
+                            <img src="content/img/fin/christmas/tree-4.png"/>
+                        </div>
+                        <div class="pack3">
+                            <img src="content/img/fin/christmas/tree-1.png"/>
+                            <img src="content/img/fin/christmas/tree-2.png"/>
+                        </div>
+                        <div class="pack4">
+                            <img src="content/img/fin/christmas/tree-1.png"/>
+                            <img src="content/img/fin/christmas/tree-2.png"/>
+                            <img src="content/img/fin/christmas/tree-1.png"/>
+                            <img src="content/img/fin/christmas/tree-1.png"/>
+                        </div>
+                        <div class="pack5">
+                            <img src="content/img/fin/christmas/tree-1.png"/>
+                            <img src="content/img/fin/christmas/tree-3.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="frame" data-depth="0">
+                    <img src="content/img/fin/christmas/1-mountain.png"/>
+                </div>
 
-  </div>
-</main>
+            </div>
+        </main>
+        <!-- PLUGINS -->
+        <script src="content/js/libraries.js"></script>
+        <!-- SCRIPTS -->
+        <script src="content/js/main.js"></script>
+        <!-- SCRIPTS -->
 
-<!-- PLUGINS -->
-<script src="content/js/libraries.js"></script>
-<!-- SCRIPTS -->
-<script src="content/js/main.js"></script>
-<!-- SCRIPTS -->
-  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
-    <script src="content/js/sketch.js"></script>-->
-  </body>
+        <script src="content/js/phaser.js"></script>
+    </body>
 
-  </html>
+</html>

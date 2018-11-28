@@ -2,249 +2,292 @@ $color-sky-1 : #FFFFFF;
 $color-sky-2 : #6DD5FA;
 $color-sky-3 : #2980B9;
 body{
-	background: $color-sky-3;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to bottom, $color-sky-3, $color-sky-2, $color-sky-1);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to bottom, $color-sky-3, $color-sky-2, $color-sky-1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-	padding: 0;
-	margin: 0;
-	overflow: hidden;
-	width: 100vw;
-	height: 100vh;
+    background: $color-sky-3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, $color-sky-3, $color-sky-2, $color-sky-1);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, $color-sky-3, $color-sky-2, $color-sky-1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
 }
 main{
-	width: 100vw;
-	height: 100vh;
-	margin: 0 auto;
-	border: 2px solid black;
-	.frame{
-		height: 100vh;
-		width: 100%;
-
-		img{
-			position: absolute !important;
-			vertical-align: bottom;
-			top: 0;
-			left: -12.5%;
-			height: auto;
-
-		}
-		&[data-depth="0"] img{
-			top: auto;
-			bottom: -75vh;
-		}
-
-		&[data-depth="0.2"] img{
-			bottom: -100vh;
-			top: auto;
-		}
-		&[data-depth="0.4"] img{
-			bottom: -125vh;
-			top: auto;
-		}
-		&[data-depth="0.6"] img{
-			left: -10vw;
-			top: 100vh;
-			width: 120vw;	
-
-		}
-		&[data-depth="0.8"] img{
-			top: 100vh;	
-			left: -10vw;
-			width: 120vw;	
-		}
-
-
-		.trees{
-			div{
-				position: absolute;
-				img{
-					transform: scaleY(0);
-				}
-
-			}
-			.pack1{
-				left: 17vw;
-				bottom: 50vh;
-				z-index: 1;
-				img{
-					&:nth-child(1){
-						padding-left: 40px;
-						padding-bottom: 30px;
-					}
-					&:nth-child(2){
-
-					}
-				}
-			}
-			.pack2{
-				left: 22vw;
-				bottom: 61vh;
-				z-index: 0;
-				img{
-					&:nth-child(1){
-						padding-left: 70px;
-						padding-bottom: 10px;
-					}
-					&:nth-child(2){
-
-					}
-				}
-
-			}
-			.pack3{
-				left: 28vw;
-				bottom: 38vh;
-				z-index: 2;
-				img{
-					&:nth-child(1){
-						padding-bottom: 30px;
-					}
-					&:nth-child(2){
-						padding-left: 70px;
-					}
-				}
-			}
-			.pack4{
-				left: 58vw;
-				bottom: 51vh;
-				z-index: 2;
-				img{
-					&:nth-child(1){
-						padding-bottom: 20px;
-					}
-					&:nth-child(2){
-						padding-left: 40px;
-						z-index: 2;
-					}
-					&:nth-child(3){
-						padding-left: 100px;
-						padding-bottom: 29px;
-						z-index: 1;
-					}
-					&:nth-child(4){
-						padding-left: 160px;
-						padding-bottom: 45px;
-						z-index: 0;
-					}
-				}
-			}
-			.pack5{
-				left: 65vw;
-				bottom: 40vh;
-				z-index: 2;
-				img{
-					&:nth-child(1){
-						padding-bottom: 0px;
-					}
-					&:nth-child(2){
-						padding-left: 100px;
-						z-index: 2;
-					}
-				}
-			}
-		}
-
-	}
-	
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    border: 2px solid black;
+    .frame{
+        
+        height: 100vh;
+        width: 100%;
+        
+        img{
+            position: absolute !important;
+            vertical-align: bottom;
+            top: 0;
+            left: -12.5%;
+            height: auto;
+            
+        }
+        &[data-depth="0"]{
+            pointer-events: none; 
+        }
+        &[data-depth="0"] img{
+            top: auto;
+            bottom: -75vh;
+            
+        }
+        
+        &[data-depth="0.2"] img{
+            bottom: -100vh;
+            top: auto;
+        }
+        &[data-depth="0.4"] img{
+            bottom: -125vh;
+            top: auto;
+        }
+        &[data-depth="0.6"] img{
+            left: -10vw;
+            top: 100vh;
+            width: 120vw;	
+            
+        }
+        &[data-depth="0.8"] img{
+            top: 100vh;	
+            left: -10vw;
+            width: 120vw;	
+        }
+        
+        
+        .trees{
+            div{
+                position: absolute;
+                img{
+                    transform: scaleY(0);
+                }
+                
+            }
+            .pack1{
+                left: 17vw;
+                bottom: 50vh;
+                z-index: 1;
+                img{
+                    &:nth-child(1){
+                        padding-left: 40px;
+                        padding-bottom: 30px;
+                    }
+                    &:nth-child(2){
+                        
+                    }
+                }
+            }
+            .pack2{
+                left: 22vw;
+                bottom: 61vh;
+                z-index: 0;
+                img{
+                    &:nth-child(1){
+                        padding-left: 70px;
+                        padding-bottom: 10px;
+                    }
+                    &:nth-child(2){
+                        
+                    }
+                }
+                
+            }
+            .pack3{
+                left: 28vw;
+                bottom: 38vh;
+                z-index: 2;
+                img{
+                    &:nth-child(1){
+                        padding-bottom: 30px;
+                    }
+                    &:nth-child(2){
+                        padding-left: 70px;
+                    }
+                }
+            }
+            .pack4{
+                left: 58vw;
+                bottom: 51vh;
+                z-index: 2;
+                img{
+                    &:nth-child(1){
+                        padding-bottom: 20px;
+                    }
+                    &:nth-child(2){
+                        padding-left: 40px;
+                        z-index: 2;
+                    }
+                    &:nth-child(3){
+                        padding-left: 100px;
+                        padding-bottom: 29px;
+                        z-index: 1;
+                    }
+                    &:nth-child(4){
+                        padding-left: 160px;
+                        padding-bottom: 45px;
+                        z-index: 0;
+                    }
+                }
+            }
+            .pack5{
+                left: 65vw;
+                bottom: 40vh;
+                z-index: 2;
+                img{
+                    &:nth-child(1){
+                        padding-bottom: 0px;
+                    }
+                    &:nth-child(2){
+                        padding-left: 100px;
+                        z-index: 2;
+                    }
+                }
+            }
+        }
+        
+    }
+    
 }
 
 $delayTime: 0.0;
 .start{
-	.frame{
-		img{
-			transition: all 1s cubic-bezier(.37,-0.16,.31,1.51);
-		}
-		&[data-depth="0"] img{
-			bottom: -13vh;
-			transition-delay: $delayTime + 0.50s;
-		}
-
-		&[data-depth="0.2"] img{
-			bottom: -21vh;
-			transition-delay: $delayTime + 0.75s;
-		}
-		&[data-depth="0.4"] img{
-			bottom: 8vh;
-			transition-delay: $delayTime + 1.00s;
-		}
-		&[data-depth="0.6"] img{
-			top: 6vh;
-			transition-delay: $delayTime + 1.25s;
-		}
-		&[data-depth="0.8"] img{
-			top: 2vh;	
-			transition-delay: $delayTime + 1.50s;
-		}
-
-		$delayTime: 2.0;
-		.trees{
-			div{
-				img{
-					transform: scaleY(1);
-					transform-origin: bottom;
-					transition: transform 0.5s cubic-bezier(.37,-0.16,.31,1.51);
-				}
-				&.pack1{
-					img{
-						&:nth-child(1){
-							transition-delay: $delayTime + 0.25s;
-						}
-						&:nth-child(2){
-							transition-delay: $delayTime + 0.35s;
-						}
-					}
-				}
-				&.pack2{
-					img{
-						&:nth-child(1){
-							transition-delay: $delayTime + 0.45s;
-						}
-						&:nth-child(2){
-							transition-delay: $delayTime + 0.55s;
-						}
-					}
-				}
-				&.pack3{
-					img{
-						&:nth-child(1){
-							transition-delay: $delayTime + 0.75s;
-						}
-						&:nth-child(2){
-							transition-delay: $delayTime + 0.85s;
-						}
-					}
-				}
-				&.pack4{
-					img{
-						&:nth-child(1){
-							transition-delay: $delayTime + 1.0s;
-						}
-						&:nth-child(2){
-							transition-delay: $delayTime + 1.15s;
-						}
-						&:nth-child(3){
-							transition-delay: $delayTime + 1.40s;
-						}
-						&:nth-child(4){
-							transition-delay: $delayTime + 1.25s;
-						}
-					}
-				}
-				&.pack5{
-					img{
-						&:nth-child(1){
-							transition-delay: $delayTime + 0.85s;
-						}
-						&:nth-child(2){
-							transition-delay: $delayTime + 0.95s;
-						}
-					}
-				}
-			}
-		}
-	}
+    .frame{
+        img{
+            transition: all 1s cubic-bezier(.37,-0.16,.31,1.51);
+        }
+        &[data-depth="0"] img{
+            bottom: -13vh;
+            transition-delay: $delayTime + 0.50s;
+        }
+        
+        &[data-depth="0.2"] img{
+            bottom: -21vh;
+            transition-delay: $delayTime + 0.75s;
+        }
+        &[data-depth="0.4"] img{
+            bottom: 8vh;
+            transition-delay: $delayTime + 1.00s;
+        }
+        &[data-depth="0.6"] img{
+            top: 6vh;
+            transition-delay: $delayTime + 1.25s;
+        }
+        &[data-depth="0.8"] img{
+            top: 2vh;	
+            transition-delay: $delayTime + 1.50s;
+        }
+        
+        $delayTime: 2.0;
+        .trees{
+            div{
+                img{
+                    transform: scaleY(1);
+                    transform-origin: bottom;
+                    transition: transform 0.5s cubic-bezier(.37,-0.16,.31,1.51);
+                }
+                &.pack1{
+                    img{
+                        &:nth-child(1){
+                            transition-delay: $delayTime + 0.25s;
+                        }
+                        &:nth-child(2){
+                            transition-delay: $delayTime + 0.35s;
+                        }
+                    }
+                }
+                &.pack2{
+                    img{
+                        &:nth-child(1){
+                            transition-delay: $delayTime + 0.45s;
+                        }
+                        &:nth-child(2){
+                            transition-delay: $delayTime + 0.55s;
+                        }
+                    }
+                }
+                &.pack3{
+                    img{
+                        &:nth-child(1){
+                            transition-delay: $delayTime + 0.75s;
+                        }
+                        &:nth-child(2){
+                            transition-delay: $delayTime + 0.85s;
+                        }
+                    }
+                }
+                &.pack4{
+                    img{
+                        &:nth-child(1){
+                            transition-delay: $delayTime + 1.0s;
+                        }
+                        &:nth-child(2){
+                            transition-delay: $delayTime + 1.15s;
+                        }
+                        &:nth-child(3){
+                            transition-delay: $delayTime + 1.40s;
+                        }
+                        &:nth-child(4){
+                            transition-delay: $delayTime + 1.25s;
+                        }
+                    }
+                }
+                &.pack5{
+                    img{
+                        &:nth-child(1){
+                            transition-delay: $delayTime + 0.85s;
+                        }
+                        &:nth-child(2){
+                            transition-delay: $delayTime + 0.95s;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
+#shaker-container{
+    width: 550px;
+    height: 700px;
+    left: calc(50vw - 250px);
+    bottom: 13vh;
+    position: relative;
+    .background{
+        position: absolute !important;
+        top: 220px;
+        left: -70px;
+        pointer-events: none;
+        z-index: 0;
+    }
+    #shaker{
+        border-radius: 100% 100% 78% 82%;
+        width: 530px;
+        height: 508px;
+        overflow: hidden;
+        top: 220px;
+        left: -60px;
+        z-index: 1;
+    }
+    .glass{
+        z-index: 2;
+        position: absolute !important;
+        top: 220px;
+        bottom: auto;
+        left: -72px;
+        pointer-events: none;
+    }
+    .content{
+        top: 390px;
+        left: -20px;
+        z-index: 0;
+    }
+}
+
+ 
 
 
 
